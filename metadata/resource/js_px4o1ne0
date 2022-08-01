@@ -1,0 +1,22 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_px4o1ne0",
+        "includeInBundle": false,
+        "remote": true,
+        "url": "resources/richtexteditor/plugins/all_plugins.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "remote": "boolean",
+        "url": "uri"
+    },
+    "name": "js",
+    "designerId": "f2894285-3936-4871-96f5-67b00c58a7f5"
+}

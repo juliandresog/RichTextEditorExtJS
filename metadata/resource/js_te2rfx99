@@ -1,0 +1,22 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js_te2rfx99",
+        "includeInBundle": false,
+        "remote": true,
+        "url": "resources/richtexteditor/rte.js"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "includeInBundle": "boolean",
+        "remote": "boolean",
+        "url": "uri"
+    },
+    "name": "js",
+    "designerId": "d5b68e31-3593-4ab6-a7bf-c16d1d40adcb"
+}
