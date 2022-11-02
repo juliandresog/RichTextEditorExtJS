@@ -126,9 +126,9 @@
     },
     "inspectorState": {
         "topInstance": "f32eb8c1-4d90-4784-8243-30240cb7369b",
-        "selectedInstance": "cf5a7d1d-e0a4-4abd-9df2-6907e9c7139c"
+        "selectedInstance": "db20514b-c577-4caa-944d-b4ffc0c3c558"
     },
-    "editMode": "design",
+    "editMode": "code",
     "userSettings": {
         "no-cmd": false
     }

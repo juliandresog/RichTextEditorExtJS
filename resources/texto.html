@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>    
-       <link rel="stylesheet" href="richtexteditor/rte_theme_default.css" />  
+       <!--link rel="stylesheet" href="richtexteditor/rte_theme_default.css" />  
        <script type="text/javascript" src="richtexteditor/rte.js"></script>  
-       <script type="text/javascript" src='richtexteditor/plugins/all_plugins.js'></script>  
+       <script type="text/javascript" src='richtexteditor/plugins/all_plugins.js'></script> 
+       <script type='text/javascript' src="richtexteditor/lang/rte-lang-es.js"></script-->
+       <link rel="stylesheet" href="https://richtexteditor.com/richtexteditor/rte_theme_default.css " />  
+       <script type="text/javascript" src="https://richtexteditor.com/richtexteditor/rte.js"></script>  
+       <script type="text/javascript" src="https://richtexteditor.com/richtexteditor/plugins/all_plugins.js"></script>  
+       <script type='text/javascript' src="https://richtexteditor.com/richtexteditor/lang/rte-lang-es.js"></script>
+       
   </head>
   <body>
     <h1>My Photo Albums App</h1>
@@ -18,6 +24,11 @@
       <button class="btn btn-sm btn-outline-primary btn-pill transition-3d-hover px-5" onclick="btngetHTMLCode();return false;">Get Html Code</button>
       <button class="btn btn-sm btn-primary btn-pill transition-3d-hover px-5" onclick="btnsetHTMLCode();return false;">Set Html Code</button>
       <button class="btn btn-sm btn-outline-info btn-pill transition-3d-hover px-5" onclick="btngetPlainText();return false;">Get Plain Text</button>
+
+      <button class="btn btn-sm btn-primary transition-3d-hover" onclick="downloadPDFDialog()">
+         Check the PDF file
+      </button>
+      <button class="btn btn-primary btn-wide transition-3d-hover mb-4 mb-sm-0 mr-3" onclick="toggle_readOnly()">Toggle ReadOnly</button>
    </div>
 
     <script>
@@ -116,7 +127,8 @@
       };
 
       //config.file_upload_handler = file_upload_handler;
-      config.editorResizeMode="height";
+      //config.editorResizeMode="height";
+      //config.toolbar = "basic";
 
 
       //var editor1 = new RichTextEditor("#div_editor1", { editorResizeMode: "height" });
@@ -132,6 +144,18 @@
       }
       function btngetPlainText() {
          alert(editor1.getPlainText())
+      }
+
+      function downloadPDFDialog() {
+         editor1.setHTMLCode("<p>Hello World</p>")
+         editor1.execCommand("html2pdf");
+      }
+
+      function toggle_readOnly() {
+         if (editor1.getReadOnly())
+            editor1.setReadOnly(false);
+         else
+            editor1.setReadOnly(true);
       }
    </script>
   </body>

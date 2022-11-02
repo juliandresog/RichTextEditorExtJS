@@ -14,8 +14,8 @@
                 "width": null
             }
         },
-        "urlPrefix": "http://localhost:36881/",
-        "exportPath": "",
+        "urlPrefix": "http://localhost:80/extjs",
+        "exportPath": "/var/www/html/extjs",
         "lockUrlPrefix": true,
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": true,
@@ -24,7 +24,7 @@
         "genTimestamps": false,
         "cacheBust": false,
         "installStatus": "Not Installed",
-        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefixTemplate": "http://localhost:80/extjs",
         "sdkPath": "",
         "lastBuildSelection": {
             "value": "webBuild",
